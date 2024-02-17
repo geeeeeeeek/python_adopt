@@ -386,20 +386,6 @@ INSERT INTO `b_notice` VALUES (1, 'aaa', 'bbbbb', '2023-06-20 19:32:49.989135');
 INSERT INTO `b_notice` VALUES (2, '测试', '狗狗来了', '2023-06-20 19:32:57.000000');
 INSERT INTO `b_notice` VALUES (3, '猫咪', '有一只新的猫咪，无人领养', '2024-01-29 17:58:36.945809');
 
--- ----------------------------
--- Table structure for b_op_log
--- ----------------------------
-DROP TABLE IF EXISTS `b_op_log`;
-CREATE TABLE `b_op_log`  (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `re_ip` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `re_time` datetime(6) NULL DEFAULT NULL,
-  `re_url` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `re_method` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `re_content` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `access_time` varchar(10) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 548 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of b_op_log
