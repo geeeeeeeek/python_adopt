@@ -66,18 +66,7 @@ npm install
 npm run dev
 ```
 
-
-### 界面预览
-
-首页
-
-![]()
-
-
-后台页面
-
-![]()
-
+ 
 
 
 ### 待完善功能
@@ -90,10 +79,12 @@ npm run dev
 
 ### 开发文档
 
-开发文档[地址](server/readme-doc.md)
+[点击查看](doc.md)
 
 
-### 作者微信（lengqin1024）
+### 付费咨询
+
+微信（lengqin1024）
 
 
 
