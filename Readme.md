@@ -15,9 +15,9 @@ https://github.com/geeeeeeeek/python_adopt
 
 ### 演示地址
 
-前台地址：  
+前台地址： http://adopt.gitapp.cn
 
-后台地址： 
+后台地址： http://adopt.gitapp.cn/admin
 
 后台管理帐号：
 
