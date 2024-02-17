@@ -57,21 +57,7 @@ def detail(request):
         serializer = ThingSerializer(thing)
         return APIResponse(code=0, msg='查询成功', data=serializer.data)
 
-
-@api_view(['POST'])
-def increaseWishCount(request):
-    try:
-        pk = request.GET.get('id', -1)
-        thing = Thing.objects.get(pk=pk)
-        # wish_count加1
-        thing.wish_count = thing.wish_count + 1
-        thing.save()
-    except Thing.DoesNotExist:
-        utils.log_error(request, '对象不存在')
-        return APIResponse(code=1, msg='对象不存在')
-
-    serializer = ThingSerializer(thing)
-    return APIResponse(code=0, msg='操作成功', data=serializer.data)
+ 
 
 @api_view(['POST'])
 def increaseRecommendCount(request):
@@ -130,23 +116,7 @@ def removeWishUser(request):
         return APIResponse(code=1, msg='操作失败')
 
     return APIResponse(code=0, msg='操作成功')
-
-@api_view(['GET'])
-def getWishThingList(request):
-    try:
-        username = request.GET.get('username', None)
-        if username:
-            user = User.objects.get(username=username)
-            things = user.wish_things.all()
-            serializer = ListThingSerializer(things, many=True)
-            return APIResponse(code=0, msg='操作成功', data=serializer.data)
-        else:
-            return APIResponse(code=1, msg='username不能为空')
-
-    except Exception as e:
-        utils.log_error(request, '操作失败' + str(e))
-        return APIResponse(code=1, msg='获取心愿单失败')
-
+ 
 
 @api_view(['POST'])
 def addCollectUser(request):
