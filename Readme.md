@@ -80,6 +80,10 @@ npm run dev
 [点击查看](doc.md)
 
 
+### 参考论文
+
+[点击查看](doc/python_adopt.docx)
+
 ### 付费咨询
 
 微信（lengqin1024）
